@@ -1,0 +1,2 @@
+Flask==1.1.2
+requests==2.25.1  # Add any other dependencies your app may need
