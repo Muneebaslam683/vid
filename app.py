@@ -1,6 +1,7 @@
 from flask import Flask, request, jsonify
 from bs4 import BeautifulSoup
 import requests
+import os
 
 app = Flask(__name__)
 
@@ -40,4 +41,5 @@ def api_extract_tags():
     return jsonify({"tags": tags})
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    port = int(os.environ.get('PORT', 5000))
+    app.run(debug=False, host='0.0.0.0', port=port)
