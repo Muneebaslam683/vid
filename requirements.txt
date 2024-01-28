@@ -1,2 +1,5 @@
 Flask==1.1.2
-requests==2.25.1  # Add any other dependencies your app may need
+Jinja2==2.11.3
+beautifulsoup4==4.10.0
+requests==2.26.0
+
